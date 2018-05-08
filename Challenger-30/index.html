@@ -8,29 +8,47 @@
   <title>Domings Car</title>
 </head>
 <style>
-  table{
-    margin-top: 30px;
-  }
-  .container{
+    table{
+        margin-top: 30px;
+    }
+    .container{
 
 
-    margin-top: 30px;
-  }
-  .header{
-    text-align: center;
+        margin-top: 30px;
+    }
+    .header{
+        text-align: center;
 
-  }
-  .header  p{
-    border: 1px solid black;
+    }
+    .header  p{
+        border: 1px solid black;
 
-  }
-  footer{
-    height: 50px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color:#212529;
-  }
+    }
+    footer{
+        height: 50px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background-color:#212529;
+    }
+    .show{
+        display: none;
+    }
+    img, td{
+        max-width: 14.28rem;
+    }
+    td{
+        text-align: center;
+    }
+    th{
+        text-align: center;
+    }
+    tbody{
+        text-align: center !important;
+        padding:0 !important;
+        margin: 0 !important;
+    }    
+        
 </style>
 <body>
   <div class="container">
@@ -63,22 +81,21 @@
       </div>
       <button type="submit" class="btn btn-primary col-sm-2">Incluir</button>
     </form>
-    <table class="table table-light col-sm-12">
-      <thead class="thead-dark">
-        <th scope="col">Imagem do Carro</th>
-        <th scope="col">Marca / Modelo</th>
-        <th scope="col">Ano do Veículo</th>
-        <th scope="col">Placa</th>
-        <th scope="col">Cor</th>
+    <table class="table">
+      <thead class="thead-dark col-sm-12">
+        <th >Imagem do Carro</th>
+        <th >Marca / Modelo</th>
+        <th >Ano do Veículo</th>
+        <th >Placa</th>
+        <th >Cor</th>
+        <th >Remover</th>
       </thead>
-      <tbody data-js="tbody">
+      <tbody class="col-sm-12"data-js="tbody">
 
       </tbody>
     </table>
   </div>
 
-
-  <script src="DOM.js"></script>
-  <script src="challenge-29.js"></script>
+  <script data-main="js/fw/config"src="js/fw/require.js"></script>
 </body>
 </html>

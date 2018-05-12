@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <title>Domings Car</title>
+</head>
+<style>
+    table{
+        margin-top: 30px;
+    }
+    .container{
+
+
+        margin-top: 30px;
+    }
+    .header{
+        text-align: center;
+
+    }
+    .header  p{
+        border: 1px solid black;
+
+    }
+    footer{
+        height: 50px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background-color:#212529;
+    }
+    .show{
+        display: none;
+    }
+    img, td{
+        max-width: 14.28rem;
+    }
+    td{
+        text-align: center;
+    }
+    th{
+        text-align: center;
+    }
+    tbody{
+        text-align: center !important;
+        padding:0 !important;
+        margin: 0 !important;
+    }
+    .disabelmsg{
+      display: none;
+    }    
+        
+</style>
+<body>
+  <div class="container">
+    <form action="" data-js="form-Vehicle">
+      <div class="row">
+        <header class="col-sm-12 header">
+          <p data-js="nameCompany"></p>
+          <p data-js="numberCompany"></p>
+          <p data-js="msgFeedback"></p>
+        </header>
+        <div  class="form-group col-sm-12">
+          <label for="IMG-Vehicle" >Imagem do Carro(URL)</label>
+          <input class="form-control" type="text" id="IMG-Vehicle" data-js="img-Vehicle" placeholder="Endereço URL do Veículo"/>
+        </div>
+        <div class="form-group col-sm-12">
+          <label for="Marca-Modelo">Marca / Modelo</label>
+          <input class="form-control" type="text" id="Marca-Modelo" data-js="brand-Vehicle" placeholder="Marca ou Modelo do Veículo"/>
+        </div>
+        <div class="form-group col-sm-12">
+          <label for="Ano">Ano do Veículo</label>
+          <input class="form-control" type="number" id="Ano" data-js="year-Vehicle" placeholder="Ano do Veículo"/>
+        </div>
+        <div class="form-group col-sm-12">
+          <label for="Placa">Placa</label>
+          <input class="form-control" type="text" id="Placa" data-js="board-Vehicle" placeholder="Placa do Veículo"/>
+        </div>
+        <div class="form-group col-sm-12">
+          <label for="Cor">Cor</label>
+          <input class="form-control" type="text" id="Cor" data-js="color-Vehicle"placeholder="Cor do Veículo"/>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary col-sm-2">Incluir</button>
+    </form>
+    <table class="table">
+      <thead class="thead-dark col-sm-12">
+        <th >Imagem do Carro</th>
+        <th >Marca / Modelo</th>
+        <th >Ano do Veículo</th>
+        <th >Placa</th>
+        <th >Cor</th>
+        <th >Remover</th>
+      </thead>
+      <tbody class="col-sm-12"data-js="tbody">
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
